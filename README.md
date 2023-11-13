@@ -1,7 +1,7 @@
 Integrantes:- Salvador, Guido Gabriel. email: guidsalv@gmail.com  (aclaración: dejo la cursada, por lo tanto la tercer entrega fue realizada por el integrante restante)
             - Christensen, Martín. email: martin.christensen93@gmail.com
 
-Temática del TPE: Página de Series
+(SI SE QUIERE VER EN FORMATO RAW se puede desde este link, ya que no pude hacer en este readme que respete el formato que le di en word: https://raw.githubusercontent.com/martinch23/TP_Tercer_entrega/main/README.md )
 
 *Listar todos las series:
 GET : series
