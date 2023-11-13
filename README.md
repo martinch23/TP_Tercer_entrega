@@ -15,13 +15,13 @@ Se puede especificar además si el orden es ASCendente o DESCendente
 
 *Listar una serie por su ID:
 GET : series/:id
-GET api/series/12
+--GET api/series/12
 
 Ejemplo: Se puede obtener una serie específica a partir del ID de la misma, como se ve en el Endpoint se obtiene la serie con ID=12.
 
 *Agregar una serie:
 POST : series
-POST api/series
+--POST api/series
 
 Este endpoint recibe un objeto JSON en el body del HTTP Request del siguiente formato:
 Campos requeridos para efectuar POST:
@@ -32,7 +32,7 @@ Campos requeridos para efectuar POST:
 
 *Modificar un juego:
 PUT : juegos/:id
-PUT api/series/12
+--PUT api/series/12
 
 Este endpoint recibe un objeto igual al anterior en el body y modifica el elemento con el ID dado en la base de datos, en este ejemplo el ID=12.
 Campos requeridos para efectuar PUT: 
