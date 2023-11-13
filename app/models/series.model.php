@@ -4,19 +4,28 @@ require_once 'model.php';
 class SeriesModel extends Model
 {
 
-    function getSeries()
+    function getSeries($sort = null, $order = null)
     {
-        $query = $this->db->prepare('SELECT * FROM series');
+        $sql = 'SELECT * FROM series';
+        if (isset($order)) {
+            $sql .= ' ORDER BY ' . $order;
+
+            if (isset($sort)) {
+                $sql .= ' ' . $sort;
+            }
+        }
+
+        $query = $this->db->prepare($sql);
         $query->execute();
         $series = $query->fetchAll(PDO::FETCH_OBJ);
 
         return $series;
     }
 
-    function insertSerie($titulo, $genero)
+    function insertSerie($titulo, $genero, $director)
     {
-        $query = $this->db->prepare('INSERT INTO series (titulo, genero) VALUES(?,?)');
-        $query->execute([$titulo, $genero]);
+        $query = $this->db->prepare('INSERT INTO series (titulo, genero, director) VALUES(?,?,?)');
+        return $query->execute([$titulo, $genero, $director]);
     }
 
     function getSerieCapitulos($idSerie)
@@ -33,10 +42,10 @@ class SeriesModel extends Model
         $query = $this->db->prepare('DELETE FROM series WHERE id_serie = ?');
         $query->execute([$id_serie]);
     }
-    function updateSeries($id, $titulo, $genero)
+    function updateSeries($id, $titulo, $genero, $director)
     {
-        $query = $this->db->prepare('update series set titulo = ?, genero = ? where id_serie = ?');
-        $query->execute([$titulo, $genero, $id]);
+        $query = $this->db->prepare('update series set titulo = ?, genero = ?, director = ? where id_serie = ?');
+        $query->execute([$titulo, $genero, $director, $id]);
     }
 
     function getSerie($id)
