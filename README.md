@@ -1,4 +1,4 @@
-Integrantes:- Salvador, Guido Gabriel. email: guidsalv@gmail.com  (aclaración: dejo la cursada, por lo tanto la tercer entrega fue realizada por el integrante restante)
+Integrantes:- Salvador, Guido Gabriel. email: guidsalv@gmail.com  (aclaración: dejó la cursada, por lo tanto la tercer entrega fue realizada por el integrante restante)
             - Christensen, Martín. email: martin.christensen93@gmail.com
 
 (SI SE QUIERE VER EL README EN FORMATO RAW se puede desde el siguiente link, ya que no pude hacer que este readme respete el formato que le di en word: https://raw.githubusercontent.com/martinch23/TP_Tercer_entrega/main/README.md )
