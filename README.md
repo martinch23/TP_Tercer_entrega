@@ -5,7 +5,7 @@ Temática del TPE: Página de Series
 
 *Listar todos las series:
 GET : series
- GET api/series
+--GET api/series
 
 Al listar todas, se puede especificar que la lista esté ordenada según un campo:
 -- GET : series?order_by={String}
